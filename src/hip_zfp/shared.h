@@ -7,7 +7,7 @@
 #include "type_info.h"
 #include "constants.h"
 
-//#define HIP_ZFP_RATE_PRINT 1
+#define HIP_ZFP_RATE_PRINT 1
 
 // bit stream word/buffer type; granularity of stream I/O operations
 typedef unsigned long long Word;
