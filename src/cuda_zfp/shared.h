@@ -7,7 +7,7 @@
 #include "type_info.cuh"
 #include "constants.h"
 
-//#define CUDA_ZFP_RATE_PRINT 1
+#define CUDA_ZFP_RATE_PRINT 1
 
 // bit stream word/buffer type; granularity of stream I/O operations
 typedef unsigned long long Word;
