@@ -39,6 +39,7 @@ void scatter_partial3(const Scalar* q, Scalar* p, uint nx, uint ny, uint nz, ptr
 
 template <class Scalar>
 __global__
+__launch_bounds__(256, 1)
 void
 hip_decode3(
   Scalar* d_data,

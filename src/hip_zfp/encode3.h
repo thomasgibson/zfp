@@ -47,6 +47,7 @@ void gather_partial3(Scalar* q, const Scalar* p, int nx, int ny, int nz, int sx,
 // encode kernel
 template <class Scalar>
 __global__
+__launch_bounds__(256, 1)
 void
 hip_encode3(
   const Scalar* d_data,   // field data device pointer
